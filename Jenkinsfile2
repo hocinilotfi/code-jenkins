@@ -18,6 +18,7 @@ pipeline{
             steps{
                 sh 'newman run collections/collection1.json -r cli,htmlextra --reporter-htmlextra-export newman-report.html'
         }
+        }
     }
     post{
         always {
