@@ -19,4 +19,9 @@ pipeline{
             }
         }
     }
+    post{
+        always {
+            junit 'newman-report.xml'
+        }
+    }
 }
