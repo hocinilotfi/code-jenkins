@@ -17,7 +17,6 @@ pipeline{
         stage('Test API'){
             steps{
                 sh 'newman run collections/collection1.json -r cli,htmlextra --reporter-htmlextra-export newman-report.html'
-            }
         }
     }
     post{
