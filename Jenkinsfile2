@@ -11,7 +11,7 @@ pipeline{
         stage('verifier la version de newman'){
             steps{
                 sh 'newman --version'
-                sh 'npm install newman-reporter-htmlextra'
+                sh 'npm i'
             }
         }
         stage('Test API'){
