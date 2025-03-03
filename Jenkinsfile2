@@ -16,8 +16,8 @@ pipeline{
         }
         stage('Test API'){
             steps{
-                sh 'newman run collections/collection1.json -r cli,htmlextra --reporter-htmlextra-export newman-report.html'
-                archiveArtifacts artifacts: 'newman-report.html', followSymlinks: false
+                sh 'newman run collections/collection1.json -r csv,htmlextra --reporter-htmlextra-export newman-report.html'
+                archiveArtifacts artifacts: '*.html', followSymlinks: false
         }
         }
     }
