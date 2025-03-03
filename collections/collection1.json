@@ -25,7 +25,7 @@
 							"(pm.environment.get('flag')?pm.test:pm.test.skip)(\"test2\", function () {",
 							"\t\tpm.environment.set(\"flag\", false)",
 							"    pm.expect(true).to.be.true",
-							"\t\tpm.expect(true).to.be.true",
+							"\t\tpm.expect(false).to.be.true",
 							"\t\tpm.environment.set(\"flag\", true)",
 							"});",
 							"(pm.environment.get('flag')?pm.test:pm.test.skip)(\"test3\", function () {",
